@@ -1,0 +1,58 @@
+{
+  "project": "Office Occupancy Detector",
+  "dataset_id": 357,
+  "rows": 20560,
+  "features": [
+    "Temperature",
+    "Humidity",
+    "Light",
+    "CO2",
+    "HumidityRatio"
+  ],
+  "targets": [
+    "Occupancy"
+  ],
+  "split": "chronological 70/30 forward holdout",
+  "task": "classification",
+  "holdout": {
+    "accuracy": 0.8978764791700438,
+    "balanced_accuracy": 0.9361082814041162,
+    "macro_f1": 0.8549853629793076,
+    "weighted_f1": 0.9058027063051427,
+    "majority_baseline_accuracy": 0.8221753930945048,
+    "per_class": {
+      "0.0": {
+        "precision": 0.9988769092542678,
+        "recall": 0.8767744479495269,
+        "f1-score": 0.9338513229735406,
+        "support": 5072
+      },
+      "1.0": {
+        "precision": 0.6359930110658125,
+        "recall": 0.9954421148587056,
+        "f1-score": 0.7761194029850746,
+        "support": 1097
+      },
+      "accuracy": 0.8978764791700438,
+      "macro avg": {
+        "precision": 0.8174349601600401,
+        "recall": 0.9361082814041162,
+        "f1-score": 0.8549853629793076,
+        "support": 6169
+      },
+      "weighted avg": {
+        "precision": 0.9343472227065719,
+        "recall": 0.8978764791700438,
+        "f1-score": 0.9058027063051427,
+        "support": 6169
+      }
+    },
+    "roc_auc": 0.9808673065918234
+  },
+  "limitations": "Public benchmark; holdout results do not establish production performance.",
+  "source_url": "https://archive.ics.uci.edu/dataset/357",
+  "generated_at": "2026-11-17",
+  "artifacts_published": [
+    "reports/benchmark.json"
+  ]
+}
